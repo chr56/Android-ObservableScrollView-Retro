@@ -3,6 +3,7 @@
 *.keystore
 /local.properties
 private.properties
+secrets.properties
 /.idea/
 .DS_Store
 /build

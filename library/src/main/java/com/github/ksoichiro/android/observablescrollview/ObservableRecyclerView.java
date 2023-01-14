@@ -19,13 +19,14 @@ package com.github.ksoichiro.android.observablescrollview;
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.SparseIntArray;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -419,6 +420,7 @@ public class ObservableRecyclerView extends RecyclerView implements Scrollable {
      * It seems that the class loader is not required when restoring from RecyclerView itself,
      * but it is required when restoring from RecyclerView's subclasses.
      */
+    @SuppressWarnings("JavadocReference")
     static class SavedState implements Parcelable {
         public static final SavedState EMPTY_STATE = new SavedState() {
         };
