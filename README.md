@@ -1,8 +1,15 @@
-# Android-ObservableScrollView Retro 
+# Android-ObservableScrollView Retro
 
 Fork of [ksoichiro/Android-ObservableScrollView](https://github.com/ksoichiro/Android-ObservableScrollView)
 
 This fork is aiming to migrate the library to AndroidX and use dependencies of 2023
+
+#### Gradle Setup (Kotlin DSL)
+```kotlin
+dependencies {
+    implementation("com.github.chr56:Android-ObservableScrollView-Retro:0.0.1")
+}
+```
 
 ## License
 
